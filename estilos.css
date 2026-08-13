@@ -18,6 +18,8 @@
 
 .cartao-imagem {
     width: 100%;
+    height: 100px;
+    object-fit: cover;
 }
 
 body {
@@ -58,6 +60,8 @@ footer {
 
 .cartao-interno {
     position: relative;
+    width: 100%;
+    height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
@@ -69,11 +73,8 @@ footer {
 .cartao-frente,
 .cartao-verso {
     position: absolute;
-
-    /* ADIÇÃO: faz os dois lados terem o mesmo tamanho do cartão */
     width: 100%;
     height: 100%;
-
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     backface-visibility: hidden;
@@ -96,4 +97,3 @@ section {
     text-align: center;
     color: rgb(30, 50, 35);
 }
-
