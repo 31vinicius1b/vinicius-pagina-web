@@ -3,12 +3,12 @@
     padding: 0;
 }
 
-.cabecalho{
+.cabecalho {
     padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(144, 11, 11);
+    background-color: rgb(10, 92, 45);
 }
 
 .cartao {
@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(255, 243, 243);
+    background-color: rgb(235, 248, 239);
 }
 
 main {
@@ -32,7 +32,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+}
+
+main h2 {
+    margin: 25px 0;
+    color: rgb(20, 70, 40);
 }
 
 .cabecalho-link {
@@ -40,32 +44,36 @@ main {
     text-decoration: none;
 }
 
-h1{
-    color:azure;
+h1 {
+    color: white;
     font-size: 24px;
 }
 
 footer {
-    background-color: rgb(144, 11, 11);
+    background-color: rgb(10, 92, 45);
     padding: 15px 25px;
     color: #fff;
+    text-align: center;
 }
 
-.cartao-interno{
-   position: relative;
-   transition: transform 0.8s;
-   transform-style: preserve-3d;
+.cartao-interno {
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 .cartao:hover .cartao-interno {
     transform: rotateY(180deg);
 }
 
-.cartao-frente, .cartao-verso { 
+.cartao-frente,
+.cartao-verso {
     position: absolute;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     backface-visibility: hidden;
+    background-color: white;
+    overflow: hidden;
 }
 
 .cartao-verso {
@@ -75,4 +83,11 @@ footer {
 section {
     display: flex;
     gap: 16px;
+}
+
+.cartao-frente p,
+.cartao-verso p {
+    padding: 10px;
+    text-align: center;
+    color: rgb(30, 50, 35);
 }
